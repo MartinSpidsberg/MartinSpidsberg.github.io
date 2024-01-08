@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Padel Spilleplan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Administrasjon - Padel Spilleplan</h1>
+
+    <div class="top-buttons">
+        <button onclick="window.location.href='index.html'" class="top-button">Tilbake til Hovedside</button>
+    </div>
+
+    <form id="adminForm">
+        <label for="nyDato">Legg til ny dato:</label>
+        <input type="date" id="nyDato" required><br><br>
+        <input type="submit" value="Legg til Dato">
+    </form>
+
+    <h2>Fjern Datoer</h2>
+    <div id="datoListe"></div>
+
+    <h2>Statistikk</h2>
+    <button id="visStatistikk">Vis Statistikk</button>
+    <div id="statistikk"></div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

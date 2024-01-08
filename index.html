@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padel Spilleplan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Padel Spilleplan</h1>
+
+    <!-- Knapp for å åpne innloggingsmodalen -->
+    <div class="top-buttons">
+        <button id="openLoginModal" class="top-button">Admin Login</button>
+    </div>
+
+    <!-- Innloggingsmodal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Admin Login</h2>
+            <input type="text" id="brukernavn" placeholder="Brukernavn"><br><br>
+            <input type="password" id="passord" placeholder="Passord"><br><br>
+            <button id="loginButton">Logg inn</button>
+        </div>
+    </div>
+
+    <form id="spilleplanForm">
+        <label for="dato">Velg dato:</label>
+        <select id="dato" name="dato" required></select><br><br>
+
+        <label for="navn">Ditt navn:</label>
+        <input type="text" id="navn" name="navn" required><br><br>
+
+        <label>Kommer du?</label>
+        <input type="radio" id="ja" name="kommer" value="Ja" checked>
+        <label for="ja">Ja</label><br>
+        <input type="radio" id="nei" name="kommer" value="Nei">
+        <label for="nei">Nei</label><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
