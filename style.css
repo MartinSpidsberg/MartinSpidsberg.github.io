@@ -86,3 +86,15 @@ input[type=submit]:hover {
     display: inline-block;
     margin-right: 10px; /* Avstand mellom knapper */
 }
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+div {
+    color: white;
+}
